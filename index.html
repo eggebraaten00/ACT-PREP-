@@ -1,68 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ACT Prep Course</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-    }
-    section {
-      margin: 20px;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #4CAF50;
-      color: white;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-    .cta-button {
-      display: inline-block;
-      padding: 10px 20px;
-      color: white;
-      background: #007BFF;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .cta-button:hover {
-      background: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT Prep Course</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            color: white;
+        }
+
+        .hero {
+            background-color: #f4f4f4;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #003366;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .content h2 {
+            color: #003366;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta a {
+            background-color: #003366;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #00509e;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>10-Week ACT Prep Course</h1>
-    <p>Master the ACT with knowledge, speed, and mentality!</p>
-  </header>
-  <section>
-    <h2>Course Details</h2>
-    <ul>
-      <li><strong>Start Date:</strong> January 15th</li>
-      <li><strong>Duration:</strong> 10 weeks</li>
-      <li><strong>Sessions:</strong> 2 hours each, weekly</li>
-      <li><strong>Topics Covered:</strong> Math, Science, English, Reading</li>
-    </ul>
-    <a class="cta-button" href="mailto:your-email@example.com?subject=ACT Prep Course Registration">Register Now</a>
-  </section>
-  <footer>
-    <p>&copy; 2024 Isaac Eggebraaten. All rights reserved.</p>
-  </footer>
+    <header>
+        <div class="logo">ACT Prep Course</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Prepare for the ACT with Confidence</h1>
+        <p>Join our 10-week course to achieve your best score!</p>
+    </section>
+
+    <section class="content">
+        <h2 id="about">About the Course</h2>
+        <p>Our comprehensive 10-week ACT prep course is designed to help students master key test strategies, improve speed, and develop a test-ready mindset. Each session focuses on Math, Science, English, and Reading with expert guidance and practice.</p>
+
+        <h2 id="schedule">Course Schedule</h2>
+        <p>The course includes weekly two-hour sessions, held virtually, ensuring flexibility and convenience for students.</p>
+
+        <h2 id="contact">Contact Us</h2>
+        <p>Have questions or need more information? Reach out to us at <a href="mailto:info@actprep.com">info@actprep.com</a>.</p>
+    </section>
+
+    <div class="cta">
+        <a href="#">Enroll Now</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ACT Prep Course. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
